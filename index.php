@@ -30,7 +30,8 @@
             if (!in_array($image,array(".",".."))){
                 // First item needs to get the active css class. Otherwise the carousel will not show
                 echo ($key == 2) ? '<div class="carousel-item active">' : '<div class="carousel-item">';
-                echo "<img class='d-block w-100' src='assets/images/$image'/></div>";
+                //echo "<img class='d-block w-100' src='assets/images/$image'/></div>";
+                echo "<img class='d-block w-100' src='https://naturelightsfjords.s3.amazonaws.com/$image'/></div>";
             }     
         }
     ?>
